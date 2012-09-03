@@ -1,3 +1,27 @@
 <h1>Contact</h1>
 
-<p>This is the contact page</p>
+<p>Please contact me through the form below.</p>
+
+<form id="contact-form" class="contact-form clearfix" action="#" method="post">
+
+    <fieldset class="name-group clearfix">
+        <label for="name">Name</label>
+        <input name="name" type="text" class="default contact-input" value="Name" title="Name" />
+    </fieldset>
+
+    <fieldset class="email-group clearfix">
+        <label for="email">Email</label>
+        <input name="email" type="text" class="default contact-input" value="Email" title="Email" />
+    </fieldset>
+
+    <fieldset class="message-group clearfix">
+        <label for="message">Message</label>
+        <textarea name="message" class="default contact-input" title="Message">Message</textarea>
+    </fieldset>
+
+    <button type="submit" name="submit">Send Message</button>
+
+</form>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+<script src="/js/scripts.js"></script>
