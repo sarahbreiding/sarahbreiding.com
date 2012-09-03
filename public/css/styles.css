@@ -211,6 +211,46 @@ h2 {
     width: 660px;
 }
 
+    .content ul,
+    .content ol {
+        margin: 10px;
+    }
+
+        .content li {
+            line-height: 1.5;
+            margin-left: 15px;
+
+        }
+
+            .content li ul,
+            .content li ol {
+                margin: 5px;
+            }
+
+        .content ul li {
+            list-style: disc;
+        }
+
+            .content li ul li {
+                list-style: circle;
+            }
+
+                .content li li ul li {
+                    list-style: square;
+                }
+
+        .content ol li {
+            list-style: decimal;
+        }
+
+            .content li ol li {
+                list-style: upper-alpha;
+            }
+
+                .content li li ol li {
+                    list-style: lower-roman;
+                }
+
 .home-content {
     color: #3D3D3D;
     font-size: 20px;
