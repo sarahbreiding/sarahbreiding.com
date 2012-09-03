@@ -1,0 +1,14 @@
+.DS_Store
+*.psd
+.bundle
+db/*.sqlite3*
+log/*.log
+*.log
+/tmp/
+doc/
+*.swp
+*~
+.project
+*.sublime-project
+*.sublime-workspace
+development.log

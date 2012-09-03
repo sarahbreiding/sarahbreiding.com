@@ -1,0 +1,234 @@
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,p,blockquote,th,td{margin:0;padding:0;}table{border-collapse:collapse;border-spacing:0;}fieldset,img,a img{border:none;}address,caption,cite,code,dfn,em,strong,th,var,optgroup{font-style:inherit;font-weight:inherit;}del,ins{text-decoration:none;}li{list-style:none;}caption,th{text-align:left;}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}q:before,q:after{content:'';}abbr,acronym{border:0;font-variant:normal;}sup{vertical-align:baseline;}sub{vertical-align:baseline;}legend{color:#000;}
+
+body {
+    background: #f8f8f8 url('/images/lightpaperfibers.jpg');
+    color: #333;
+    font-family: 'Helvetica Neue', 'Arial', sans-serif;
+    width: 100%;
+    height: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: #3EAFAB;
+}
+
+a:hover,
+a:focus {
+    color: #8A748F;
+}
+
+h1 {
+    color: #3D3D3D;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    text-shadow: 0 1px 2px rgba(255,255,255,1.0);
+}
+
+h2 {
+    color: #3EAFAB;
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    text-align: center;
+    text-shadow: 0 1px 2px rgba(255,255,255,1.0);
+}
+
+.clearfix:before,.clearfix:after { content:""; display:table; }
+.clearfix:after { clear:both; }
+.clearfix { zoom:1; /* For IE 6/7 */ }
+
+.container {
+    margin: 0 auto;
+    padding-bottom: 20px;
+    width: 960px;
+}
+
+.divider {
+    height: 10px;
+    margin: 40px 0;
+}
+
+    .bar {
+        background: #E0DFDF;
+        border-bottom: solid 1px #c7c7c7;
+        float: left;
+        width: 450px;
+        height: 2px;
+        margin-top: 3px;
+    }
+
+    .short-divider .bar {
+        width: 300px;
+    }
+
+    .short-divider .bar-left {
+        margin-left: 150px;
+    }
+
+    .circles {
+        float: left;
+        padding: 0 15px;
+        width: 30px;
+        height: 10px;
+    }
+
+        .circle {
+            background: #BEA6C4;
+            -moz-border-radius: 10px;
+            -webkit-border-radius: 10px;
+            border-radius: 10px;
+            border: solid 1px #8A748F;
+            float: left;
+            width: 8px;
+            height: 8px;
+        }
+
+
+
+/* ----- Header ----- */
+
+.header {
+    padding: 20px 0 0;
+}
+
+    .logo {
+        background: url('/images/logo.png') no-repeat;
+        color: #8A748F;
+        display: block;
+        float: left;
+        font-size: 30px;
+        outline: none;
+        padding-left: 95px;
+        width: 240px;
+        height: 80px;
+        line-height: 80px;
+        text-decoration: none;
+        font-weight: 500;
+        font-family: "Bell MT";
+
+    }
+
+    .logo span {
+        color: #3D3D3D;
+    }
+
+
+
+    .social {
+        float: right;
+    }
+
+        .social li {
+            float: left;
+            margin-left: 15px;
+        }
+            .social a {
+                background: url('/images/social.png') no-repeat;
+                display: block;
+                outline: none;
+                text-indent: -9999px;
+                -moz-transition: all .25s ease-in-out;
+                -webkit-transition: all .25s ease-in-out;
+                transition: all .25s ease-in-out;
+                width: 40px;
+                height: 44px;
+            }
+
+            .social .twitter a {
+                background-position: 0 4px;
+            }
+
+            .social .twitter a:hover,
+            .social .twitter a:focus {
+                background-position: 0 0;
+            }
+
+            .social .linkedin a {
+                background-position: -40px 4px;
+            }
+            .social .linkedin a:hover,
+            .social .linkedin a:focus {
+                background-position: -40px 0;
+            }
+            .social .email a {
+                background-position: -80px 4px;
+            }
+            .social .email a:hover,
+            .social .email a:focus {
+                background-position: -80px 0;
+            }
+
+.main-content {
+    color: #3D3D3D;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 50px;
+    text-shadow: 0 1px 2px rgba(255,255,255,1.0);
+
+}
+
+.callouts {
+
+}
+
+    .column {
+        float: left;
+        display: block;
+        padding-right: 10px;
+        text-align: center;
+        width: 310px;
+    }
+
+    .column3 {
+        padding-right: 0;
+    }
+
+    .callouts h2 {
+        margin: 0 auto 10px;
+        width: 150px;
+    }
+
+        .callouts h2 a {
+            display: block;
+        }
+
+            .callouts h2 span {
+                background: url('/images/trees.png') no-repeat;
+                display: block;
+                height: 160px;
+            }
+
+            .column1 h2 span {
+                background-position: 0 0;
+            }
+
+                .column1 h2 a:hover span,
+                .column1 h2 a:focus span {
+                    background-position: 0 -150px;
+                }
+
+            .column2 h2 span {
+                background-position: -150px 0;
+            }
+
+                .column2 h2 a:hover span,
+                .column2 h2 a:focus span {
+                    background-position: -150px -150px;
+                }
+
+            .column3 h2 span {
+                background-position: -300px 0;
+            }
+
+                .column3 h2 a:hover span,
+                .column3 h2 a:focus span {
+                    background-position: -300px -150px;
+                }
+
+.footer {
+    text-align: center;
+}
