@@ -146,6 +146,12 @@ h2 {
                 text-decoration: none;
             }
 
+            .page-about .nav .about a,
+            .page-portfolio .nav .portfolio a,
+            .page-contact .nav .contact a {
+                color: #8A748F;
+            }
+
     .social {
         margin: 40px auto;
         width: 150px;
