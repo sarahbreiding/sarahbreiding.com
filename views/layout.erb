@@ -5,54 +5,72 @@
     <title><%= @title %></title>
 
     <link rel="stylesheet" href="/css/styles.css" />
+    <link href='http://fonts.googleapis.com/css?family=Italiana' rel='stylesheet' type='text/css'>
+
 </head>
 <body>
 
-    <div class="container">
-        <div class="header clearfix">
-            <a class="logo" href="/">
-                Sarah<span>Breiding</span>
-            </a>
-            <ul class="social">
-                <li class="twitter">
-                    <a href="http://twitter.com/#/sarahbreiding" target="_blank">Twitter</a>
-                </li>
-                <li class="linkedin">
-                    <a href="http://linkedin.com/in/sarahbreiding" target="_blank">LinkedIn</a>
-                </li>
-                <li class="email">
-                    <a href="/contact">Contact</a>
-                </li>
-            </ul>
-        </div>
+    <div class="header clearfix">
 
-        <div class="divider">
-            <div class="bar bar-left"></div>
-            <div class="circles">
-                <div class="circle"></div>
-                <div class="circle"></div>
-                <div class="circle"></div>
-            </div>
-            <div class="bar bar-right"></div>
+        <a class="logo" href="/">
+            Sarah<br />
+            <span>Breiding</span>
+        </a>
+
+        <ul class="nav">
+            <li><a href="/about">About</a></li>
+            <li><a href="/portfolio">Portfolio</a></li>
+            <li><a href="/contact">Contact</a></li>
+        </ul>
+
+        <ul class="social clearfix">
+            <li class="twitter">
+                <a href="http://twitter.com/#/sarahbreiding" target="_blank">Twitter</a>
+            </li>
+            <li class="linkedin">
+                <a href="http://linkedin.com/in/sarahbreiding" target="_blank">LinkedIn</a>
+            </li>
+            <li class="email">
+                <a href="/contact">Contact</a>
+            </li>
+        </ul>
+
+    </div>
+
+<!--
+    <div class="divider">
+        <div class="bar bar-left"></div>
+        <div class="circles">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
         </div>
+        <div class="bar bar-right"></div>
+    </div>
+-->
+
+    <div class="content">
 
         <%= yield %>
 
-        <div class="divider short-divider">
-            <div class="bar bar-left"></div>
-            <div class="circles">
-                <div class="circle"></div>
-                <div class="circle"></div>
-                <div class="circle"></div>
-            </div>
-            <div class="bar bar-right"></div>
-        </div>
+    </div>
 
-        <div class="footer">
-            <p>&copy; 2012 Sarah Breiding</p>
+<!--
+    <div class="divider short-divider">
+        <div class="bar bar-left"></div>
+        <div class="circles">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
         </div>
+        <div class="bar bar-right"></div>
+    </div>
 
-    </div><!-- /.container -->
+-->
+
+    <div class="footer">
+        <p>&copy; 2012 Sarah Breiding</p>
+    </div>
 
 </body>
 </html>
