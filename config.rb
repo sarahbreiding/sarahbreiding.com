@@ -8,6 +8,8 @@ set :fonts_dir, 'fonts'
   ignore "/#{page}.html"
 end
 
+ignore "*.psd"
+
 # Build-specific configuration
 configure :build do
   # For example, change the Compass output style for deployment
