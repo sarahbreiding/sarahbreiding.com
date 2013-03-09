@@ -9,8 +9,8 @@ body {
 }
 
 p {
-	line-height: 1.5;
-	margin: 10px 0;
+    line-height: 1.5;
+    margin: 10px 0;
 }
 
 a {
@@ -40,8 +40,8 @@ h2 {
 }
 
 .alignright {
-	float: right;
-	margin: 0 0 10px 20px;
+  float: right;
+  margin: 0 0 10px 20px;
 }
 
 .clearfix:before,.clearfix:after { content:""; display:table; }
@@ -326,12 +326,13 @@ h2 {
 /* Portfolio */
 
 .class {
-	font-weight: bold;
+  font-weight: bold;
 }
 
 /* Contact */
 
 .contact-form {
+    display: none;
     margin: 20px 0;
 }
 
@@ -375,26 +376,22 @@ h2 {
         border-color: #D1A4A4;
     }
 
-    .contact-form .default {
-        color: #777;
-    }
-
-    .contact-form input:focus,
-    .contact-form textarea:focus {
-        color: #333;
-    }
-
     .contact-form .error-message {
         background: #B34C4C;
         -moz-border-radius: 0 3px 0 3px;
         -webkit-border-radius: 0 3px 0 3px;
         border-radius: 0 3px 0 3px;
         color: #FFF;
+        display: none;
         font-size: .8em;
         padding: 5px 8px;
         position: absolute;
             right: 0;
             top: 0;
+    }
+
+    .contact-form .error .error-message {
+        display: block;
     }
 
     .contact-form input:focus + .error-message,
@@ -455,6 +452,8 @@ h2 {
     }
 
     .invalid {
-        border-color: #600;
-        color: #600;
+        background: none;
+        border-color: #900;
+        color: #900;
+        font-size: 1em;
     }
