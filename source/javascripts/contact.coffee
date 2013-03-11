@@ -36,6 +36,7 @@ class Contact
     $inputs.placeholder()
 
     @addEvents()
+    @wakeCourier()
 
   addEvents: ->
     @$contactForm.on 'submit', @onSubmit
@@ -75,5 +76,8 @@ class Contact
       @$contactForm
         .after("<div class='response'>#{response}</div")
         .remove()
+
+  wakeCourier: ->
+    $.get 'http://courier.crbapps.com/wake'
 
 new Contact
