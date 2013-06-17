@@ -93,6 +93,7 @@ input {
    	font-family: "Georgia", serif;
    	font-size: 14px;
    	height: 22px;
+   	width: 384px;
    	padding: 2px;
 }
 
@@ -111,6 +112,8 @@ textarea {
     margin-bottom: 5px;
     overflow: auto;
     padding: 3px;
+    height: 100px;
+    width: 382px;
 }
 
 .submit,
@@ -144,15 +147,4 @@ textarea {
 	white-space: normal;
 }
 
-footer {
-    background-color: black;
-    bottom: 0;
-    color: white;
-    left: 0;
-    opacity: .8;
-    padding-bottom: 1em;
-    padding-left: 1em;
-    position: absolute;
-    width: 150px;
-}
 
