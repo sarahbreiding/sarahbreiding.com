@@ -24,7 +24,7 @@ body {
 .content {
 	background-color: black;
 	color: white;
-	height: 250px;
+	overflow: hidden;
 	opacity: .8;
 }
 
