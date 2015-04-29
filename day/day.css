@@ -128,10 +128,8 @@ transition: 3s linear 5s;
   font-size: 22px;
   position: relative;
   bottom: 2100px;
-  left: 660px;
+  left: 305px;
   border-left: yellow solid 5px;
-  text-align:left;
-  width: 520px;
 }
 
 .grow {
@@ -144,38 +142,32 @@ transition: 3s linear 5s;
   font-size: 22px;
   position: relative;
   bottom: 1700px;
-  right: 695px;
+  right: 275px;
   border-right: yellow solid 5px;
-  text-align:right;
 }
 
 .gradschool {
   font-size: 22px;
   position: relative;
   bottom: 1300px;
-  left: 655px;
+  left: 266px;
   border-left: yellow solid 5px;
-  text-align: left;
-  width: 450px;
 }
 
 .libraries {
   font-size: 22px;
   position: relative;
   bottom: 900px;
-  right: 695px;
+  right: 310px;
   border-right: yellow solid 5px;
-  text-align: right;
 }
 
 .gt {
   font-size: 22px;
   position: relative;
   bottom: 500px;
-  left: 645px;
+  left: 124px;
   border-left: yellow solid 5px;
-  text-align: left;
-  width: 250px;
 }
 
 .sb-slider {
@@ -189,6 +181,12 @@ transition: 3s linear 5s;
 }
 
 .slider-nav {
- list-style-type: none; 
+  list-style-type: none;
+  display: inline;
 }
+
+.slider-prev {
+  background-color: #fff;
+  color: #ebebeb;
+  padding: 10px;
 }
