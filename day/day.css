@@ -52,7 +52,6 @@ a {
 
 .hobbies {
   font-size: 50px;
-  width: 1500px;
 }
 
 .hobbies div {
@@ -64,7 +63,7 @@ width: 500px;
 }
 
 .hobbies:hover div {
-width: 1500px;
+width: 1000px;
 }
 
 .hobbies .knitting {
