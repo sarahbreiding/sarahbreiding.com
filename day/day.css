@@ -15,7 +15,7 @@ body {
 img {
   border: white 15px solid;
   box-shadow: 0 8px 6px -6px black;
-  margin: 0 20px;
+  margin: 20px;
 }
 
 .arrow {
@@ -129,10 +129,8 @@ transition: 3s linear 5s;
   font-size: 22px;
   position: relative;
   bottom: 2100px;
-  left: 495px;
+  left: 305px;
   border-left: yellow solid 5px;
-  text-align: left;
-  padding-left: 20px;
 }
 
 .grow {
