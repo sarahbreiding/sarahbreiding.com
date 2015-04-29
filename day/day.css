@@ -1,0 +1,182 @@
+html {
+  background: url(grey_wash_wall.png) repeat;
+}
+
+body {
+  font-family: Candara,Calibri,Segoe,"Segoe UI",Optima,Arial,sans-serif;
+  color: #fff;
+  text-align: center;
+}
+
+.chris-ruby {
+  margin-top: 40px;
+}
+
+img {
+  border: white 15px solid;
+  box-shadow: 0 8px 6px -6px black;
+  margin: 0 20px;
+}
+
+.arrow {
+  margin: 20px 0 500px 0;
+}
+
+.arrow img {
+  border: none;
+    box-shadow: 0 0 0;
+}
+
+a .arrow:hover {
+  opacity: .5;
+}
+
+.locations-lived {
+  font-size: 100px;
+  padding-top: 50px;
+}
+
+.locations-lived a {
+  margin: 50px;
+  display: inline-block;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.middle {
+  padding-top: 50px;
+}
+
+.hobbies {
+  font-size: 50px;
+  width: 1500px;
+}
+
+.hobbies div {
+margin: 5px 0;
+padding: 5px;
+color: white;
+border-radius: 5px;
+width: 500px;
+}
+
+.hobbies:hover div {
+width: 1500px;
+}
+
+.hobbies .knitting {
+transition: 3s linear;
+}
+
+.hobbies .tennis {
+transition: 3s linear 1s;
+}
+
+.hobbies .yoga {
+transition: 3s linear 2s;
+}
+
+.hobbies .ruby {
+transition: 3s linear 3s;
+}
+
+.hobbies .reading {
+transition: 3s linear 4s;
+}
+
+.hobbies .cooking {
+transition: 3s linear 5s;
+}
+
+.hobbies .kayaking {
+  transition: 3s linear 6s;
+}
+
+.hobbies .programming {
+  transition: 3s linear 7s;
+}
+
+.hobbies .tv {
+  transition: 3s linear 8s;
+}
+
+.button {
+  background-color: #fff;
+  color: #4B4B4B;
+  height: 45px;
+  width: 200px;
+  display: inline-block;
+  margin: 50px;
+  font-size: 25px;
+  padding-top: 10px;
+}
+
+.button:hover {
+  opacity: .5;
+}
+
+.timeline {
+  background-color: #fff;
+  display: inline-block;
+  height: 2200px;
+  width: 20px;
+}
+
+.college  {
+  font-size: 22px;
+  position: relative;
+  bottom: 2100px;
+  left: 305px;
+  border-left: yellow solid 5px;
+}
+
+.grow {
+  transition: all .2s ease-in-out;
+}
+
+.grow:hover { transform: scale(1.1); }
+
+.intleducation {
+  font-size: 22px;
+  position: relative;
+  bottom: 1700px;
+  right: 275px;
+  border-right: yellow solid 5px;
+}
+
+.gradschool {
+  font-size: 22px;
+  position: relative;
+  bottom: 1300px;
+  left: 266px;
+  border-left: yellow solid 5px;
+}
+
+.libraries {
+  font-size: 22px;
+  position: relative;
+  bottom: 900px;
+  right: 310px;
+  border-right: yellow solid 5px;
+}
+
+.gt {
+  font-size: 22px;
+  position: relative;
+  bottom: 500px;
+  left: 124px;
+  border-left: yellow solid 5px;
+}
+
+.sb-slider {
+  margin: 20px auto;
+  width: 600px;
+}
+
+.sb-slider img {
+  border: none;
+  margin: 0;
+}
