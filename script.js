@@ -1,19 +1,37 @@
 (function () {
+  $('.contact-handle').click(function(){
+    $('.contact-form-section').toggleClass('slideUp slideDown');
+    $('.hidden-contact-section').slideToggle();
+  })
 
-  $.fn.sarahsSlideToggle = function () {
-    return this.each(function () {
-      var $el = $(this);
-      if ($el.is(':visible')) {
-        $el.animate({ width: 0 }, 750, function () {
-          $el.hide();
-        });
-      } else {
-        $el.css({ width: 0 });
-        $el.show();
-        $el.animate({ width: '100%' }, 750);
-      }
+  $('.flex-item-1').click(function(){
+    $(this).toggleClass('showAboutText');
+    $('.flex-item-2').toggleClass('hideSocialMedia');
+    $('.about-text').slideToggle('slow');
+    $('.about-header').toggleClass('moveAboutHeader');
+  });
+
+  $('.flex-item-4').click(function(){
+    $(this).toggleClass('showWorkExamples');
+    $('.flex-item-4 h1').toggleClass('moveWorkHeader');
+    $('.flex-item-3').toggleClass('hideRubyTop');
+    $('.work-examples').slideToggle('slow');
+    $('.img-wrap').click(function(e){
+      e.stopPropagation();
     });
-  };
+    $('.light-box').click(function(e){
+      e.stopPropagation();
+    });
+  })
+
+  $('.flex-item-4 img').click(function(){
+    var imgName = $(this).attr('class');
+    $('#' + imgName).show();
+    $('.light-box').click(function(){
+      $('.light-box').hide();
+    })
+  })
+
 
   var $contactForm = $('#contact-form');
 
@@ -25,11 +43,6 @@
       data: $contactForm.serialize()
     });
   };
-
-  $(".envelope").click(function(e) {
-    e.preventDefault();
-    $(".contact").sarahsSlideToggle();
-  });
 
   $contactForm.submit(function (e) {
     e.preventDefault();

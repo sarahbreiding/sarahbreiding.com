@@ -1,37 +1,55 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="utf-8" />
-    <title>Sarah Breiding</title>
-    <link href="http://fonts.googleapis.com/css?family=Meddon" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" type="text/css" href="style.css" />
+  <meta charset="utf-8" />
+  <title>Sarah Breiding | Web Developer</title>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Bilbo+Swash+Caps|Calligraffitti|Dawning+of+a+New+Day" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300|Open+Sans+Condensed:300|Yanone+Kaffeesatz:200" rel="stylesheet">
 </head>
 <body>
-  <div class="rap">
-
-    <div class="content">
-      <h1>Sarah Breiding</h1>
-      <p>Philadelphia-based developer with a passion for information architecture and data visualization. On a mission to bring innovative technology and design to information services.</p>
-      <a href="#" class="envelope">
-        <img src="images/envelope.png" height="50" width="50">
-      </a>
-      <a href="https://www.twitter.com/sarahbreiding" target="_blank" class="twitter">
-        <img src="images/twitter.png" height="60" width="60">
-      </a>
-    </div>
-
-    <div class="contact">
-      <h2>Get in touch!</h2>
-        <form id="contact-form" action="#">
-          <input id="name" class="name contact-input" type="text" name="name" placeholder="Your Name" />
-          <input id="email" class="email contact-input" type="text" name="email" placeholder="Your Email Address" />
-          <textarea id="message" class="message contact-input" name="message" placeholder="Your message"></textarea>
-          <button class="submit" id="submit" type="submit">Send</button>
-        </form>
-    </div>
-
+  <div class='main-content'>
+      <div class='flex-container'>
+        <div class='flex-item-1'>
+          <h1 class='about-header'>About</h1>
+          <div class='about-text hidden'>
+            <p>I'm a Philadelphia-based developer drawn to the challenge and thrill of programming.</p>
+            <p> I enjoy working with other enthusiastic developers building software that people love and enjoy.</p>
+          </div>
+        </div>
+        <div class='flex-item-2'>
+          <div class='social-media-section'>
+            <a href='https://github.com/sarahbreiding' target='_blank'><img src='github.png'></a>
+            <a href='https://twitter.com/sarahbreiding' target='_blank'><img src='twitter.png'></a>
+            <a href='http://codepen.io/sbreid/' target='_blank'><img src='codepen.png'></a>
+          </div>
+        </div>
+        <div class='flex-item-3'>
+            <img src='ruby-top-yellow.png' class='ruby-top-yellow' height='180px'>
+        </div>
+        <div class='flex-item-4'>
+          <h1>Work</h1>
+            <div class='work-examples hidden'>
+            <p>I've worked with the following:</p>
+            <img src='logos.png' height='200px' class='languageLogos'>
+            <img src='logosVertical.png' width='200px' class='languageLogosVertical hidden'>
+            </div>
+        </div>
+      </div>
+      <div class='contact-form-section slideDown'>
+          <div class='contact-handle'>Contact</div>
+          <div class='hidden-contact-section'>
+            <p class='get-in-touch'>Get in Touch!</p>
+            <form id="contact-form" action="#">
+                <input name='name' placeholder='YOUR NAME' type='text'>
+                <input name='email' placeholder='YOUR EMAIL' type='text'>
+                <textarea name='message' placeholder='YOUR MESSAGE'></textarea>
+                <input type='submit' class='submit-button'>
+            </form>
+          </div>
+      </div>
   </div>
-
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
   <script src="jquery.xdomainrequest.js"></script>
   <script src="script.js"></script>

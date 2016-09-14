@@ -1,146 +1,380 @@
-body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,p,blockquote,th,td{margin:0;padding:0;}table{border-collapse:collapse;border-spacing:0;}fieldset,img{border:0;}address,caption,cite,code,dfn,em,strong,th,var,optgroup{font-style:inherit;font-weight:inherit;}del,ins{text-decoration:none;}li{list-style:none;}caption,th{text-align:left;}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}q:before,q:after{content:'';}abbr,acronym{border:0;font-variant:normal;}sup{vertical-align:baseline;}sub{vertical-align:baseline;}legend{color:#000;}
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
-html {
-     background: url(images/background.jpg) no-repeat center center fixed;
-     -webkit-background-size: cover;
-     -moz-background-size: cover;
-     -o-background-size: cover;
-     background-size: cover;
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
+/* HTML5 display-role reset for older browsers */
 
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
 body {
-	font-family: "Optima",sans-serif;
-	width: 100%;
-	height: 100%;
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
-.rap {
-	position: relative;
-	margin-left: 100px;
-	margin-top: 100px;
-	width: 400px;
+
+/* Portfolio CSS */
+body {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 200;
 }
 
-.content {
-	background-color: black;
-	color: white;
-	overflow: hidden;
-	opacity: .8;
+.wrapper, html, body {
+  height: 100%;
+  margin: 0;
 }
 
-h1 {
-	font-family: "Meddon", cursive;
-	font-size: 32px;
-	padding-top: 10px;
-	padding-left: 18px;
+.main-content {
+  height: 100%;
 }
 
-p {
-	font-size: 20px;
-	padding-top: 10px;
-	padding-left: 18px;
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: 100%;
 }
 
-.envelope {
-    border: none;
-    float: right;
-    opacity: .6;
-    padding-right: 13px;
-    padding-top: 10px;
+.flex-item-1, .flex-item-2, .flex-item-3, .flex-item-4 {
+  height: 50%;
+  width: 50%;
+  text-align: center;
 }
 
-a.envelope:hover {
-	opacity: 1;
+.flex-item-1, .flex-item-4 {
+  background-color: #dedede;
 }
 
-.twitter {
-    border: none;
-    float: right;
-    opacity: .6;
-    padding-right: 5px;
-    padding-top: 3px;
+.about-header {
+  font-size: 4.5em;
+  margin-top: 100px;
 }
 
-a.twitter:hover {
-	opacity: 1;
+.flex-item-4 h1 {
+  font-size: 4.5em;
+  margin-top: 90px;
 }
 
-.contact {
-	background-color: black;
-	display: none;
-	height: 250px;
-	width: 400px;
-	opacity: .8;
-	overflow: hidden;
-	position: absolute;
-	left: 100%;
-	top: 0;
-	white-space: nowrap;
+.about-text {
+  font-size: 1.5em;
 }
 
-h2 {
-    color: white;
-    font-size: 22px;
-    font-weight: 500;
-    padding-top: 8px;
-    padding-bottom: 5px:
+.about-text p {
+  margin: 20px 0;
 }
 
-input {
-    border: none;
-    border-radius: 3px;
-    display: block;
-   	font-size: 14px;
-   	height: 22px;
-   	width: 384px;
-   	padding: 2px;
+.hidden {
+  display: none;
 }
 
-.name {
-	margin-bottom: 5px;
-	margin-top: 3px;
+.showAboutText {
+  box-shadow: inset 0px -15px 0px 0px #efef67;
+  transition: all 1s;
+  width: 100%;
+}
+
+.flex-item-1:hover, .flex-item-4:hover, .flex-item-1:focus, .flex-item-4:focus, .flex-item-1:active, .flex-item-4:active {
+  background-color: #f6f6f6;
+  cursor: pointer;
+}
+
+.flex-item-2 {
+  background-color: #efef67;
+  overflow: hidden;
+}
+
+.flex-item-2 p {
+  font-size: 1.8em;
+}
+
+.social-media-section {
+  margin-top: 100px;
+}
+
+.social-media-section a:hover {
+  opacity: .75;
+}
+
+.hideSocialMedia {
+  transition: all 1s;
+  width: 0%;
+}
+
+.flex-item-3 {
+  background-color: #fff;
+  overflow: hidden;
+}
+
+.ruby-top-yellow {
+  margin-top: 100px;
+}
+
+.showWorkExamples {
+  box-shadow: inset 0px 15px 0px 0px #efef67;
+  width: 100%;
+  transition: all 1s;
+}
+
+.work-examples {
+  margin-top: -90px;
+}
+
+.work-examples p {
+  font-size: 1.5em;
+  margin-bottom: 30px;
+}
+
+.moveWorkHeader {
+  display: inline-block;
+  height: 20px;
+  position: relative;
+  right: 43%;
+  top: 80px;
+  transform: rotate(-90deg);
+  transition: all 1s;
+}
+
+.hideRubyTop {
+  width: 0;
+  transition: all 1s;
+}
+
+.contact-handle {
+  background-color: #555B68;
+  -moz-border-radius: 10px 10px 0 0;
+  -webkit-border-radius: 10px 10px 0 0;
+  border-radius: 10px 10px 0 0;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1.5em;
+  margin-left: -62.5px;
+  margin-top: -31px;
+  padding: 10px 25px;
+  text-align: center;
+  width: 73px;
+  position: relative;
+  left: 50%;
+}
+
+.contact-form-section {
+  background-color: #555B68;
+  color: #fff;
+  height: 1em;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  text-align: center;
+}
+
+.hidden-contact-section {
+  display: none;
+  font-family: 'Dawning of a New Day', cursive;
+  font-size: 3em;
+}
+
+.slideUp {
+  height: 75%;
+  transition: all 1s;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -o-transition: all 1s;
+}
+
+.slideDown {
+  height: 1em;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
+}
+
+input, textarea {
+  background-color: #7F889D;
+  border: #434343 .5px solid;
+  color: #fff;
+  display: block;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 16px;
+  margin: 0 auto;
+  margin-top: 25px;
+  margin-bottom: 10px;
+  outline: none;
+  padding: 10px;
+  width: 45%;
 }
 
 textarea {
-	border: none;
-	border-radius: 3px;
-	display: block;
-	font-size: 14px;
-	font-family: "Optima", sans-serif;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    overflow: auto;
-    padding: 3px;
-    height: 100px;
-    width: 382px;
+  height: 80px;
 }
 
-.submit,
-.processing {
-	border: none;
-	border-radius: 3px;
-    float: right;
-    font-size: 16px;
-    font-style: bold;
-    height: 30px;
-    line-height: 30px;
-    margin-top: 3px;
-    margin-right: 10px;
-    padding: 0 5px;
+::-webkit-input-placeholder { /* Chrome */
+  color: #fff;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: #fff;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: #fff;
+  opacity: 1;
+}
+:-moz-placeholder { /* Firefox 4 - 18 */
+  color: #fff;
+  opacity: 1;
 }
 
-.submit {
-	cursor: pointer;
+input:focus, textarea:focus {
+  color: #fff;
 }
 
-.processing {
-	background: #FFF;
+.get-in-touch {
+  margin: 30px;
 }
 
-.response {
-	color: #FFF;
-	font-size: 1.2em;
-	line-height: 1.5;
-	margin: 10px 0;
-	white-space: normal;
+.submit-button {
+  background-color: #efef67;
+  border: #434343 .5px solid;
+  color: #434855;
+  padding: 10px;
+  width: 25%;
 }
+
+
+/****************Responsive Styles**********/
+
+@media screen and (max-width: 900px){
+  .showWorkExamples {
+    height: 100%;
+  }
+  .flex-item-4 .close {
+    bottom: 600px;
+    left: 35%;
+  }
+  .languageLogos {
+    display: none;
+  }
+  .languageLogosVertical{
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 60px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .flex-item-1, .flex-item-2, .flex-item-3, .flex-item-4 {
+    flex-basis: 500px;
+  }
+  .showAboutText {
+    height: 100%;
+  }
+  .ruby-top-yellow {
+    margin-top: 42px;
+  }
+  .showWorkExamples {
+    border: none;
+    height: 100%;
+  }
+  .hideRubyTop {
+    height: 0%;
+  }
+  input, textarea {
+    margin: 11px 0 3px 60px;
+    width: 55%;
+  }
+}
+
+@media screen and (max-height: 700px) and (min-height: 500px) and (min-width: 501px){
+  .about-text p {
+    font-size: 1em;
+    margin: 15px 0;
+  }
+  .moveAboutHeader {
+    font-size: 4em;
+    margin-top: 15px;
+    transition: all 1s;
+  }
+  .ruby-top-yellow {
+    margin-top: 6%;
+  }
+  .slideUp {
+    height: 90%;
+  }
+  .get-in-touch {
+    margin: 10px;
+  }
+}
+
+@media screen and (max-height: 499px) {
+  .flex-item-1, .flex-item-2, .flex-item-3, .flex-item-4 {
+    height: 100%;
+  }
+  .slideUp {
+    height: 90%;
+  }
+  .get-in-touch {
+    margin: 3%;
+  }
+  input, textarea {
+    margin-top: 1%;
+    margin-bottom: 0;
+    font-size: 14px;
+  }
+  textarea {
+    height: 60px;
+  }
+}
+
+@media screen and (max-height: 350px){
+  .about-text p {
+    font-size: 1em;
+    margin: 15px 0;
+  }
+  .moveAboutHeader {
+    font-size: 4em;
+    margin-top: 30px;
+    transition: all 1s;
+  }
+  .get-in-touch {
+    margin: 1%;
+  }
+  .ruby-top-yellow {
+    margin-top: 10%;
+  }
+}
+
+
