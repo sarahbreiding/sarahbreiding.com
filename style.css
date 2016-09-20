@@ -49,7 +49,7 @@ table {
 }
 
 
-/* Portfolio CSS */
+/* Sarahbreiding.com CSS */
 body {
   font-family: 'Josefin Sans', sans-serif;
   font-weight: 200;
@@ -72,9 +72,15 @@ body {
 }
 
 .flex-item-1, .flex-item-2, .flex-item-3, .flex-item-4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 50%;
   width: 50%;
-  text-align: center;
+}
+
+.flex-item-1 {
+  flex-direction: column;
 }
 
 .flex-item-1, .flex-item-4 {
@@ -83,16 +89,11 @@ body {
 
 .about-header {
   font-size: 4.5em;
-  margin-top: 100px;
-}
-
-.flex-item-4 h1 {
-  font-size: 4.5em;
-  margin-top: 90px;
 }
 
 .about-text {
   font-size: 1.5em;
+  text-align: center;
 }
 
 .about-text p {
@@ -123,10 +124,6 @@ body {
   font-size: 1.8em;
 }
 
-.social-media-section {
-  margin-top: 100px;
-}
-
 .social-media-section a:hover {
   opacity: .75;
 }
@@ -141,8 +138,13 @@ body {
   overflow: hidden;
 }
 
-.ruby-top-yellow {
-  margin-top: 100px;
+.flex-item-4 h1 {
+  font-size: 4.5em;
+}
+
+.flex-item-4 img {
+  max-height: 80px;
+  margin: .1em;
 }
 
 .showWorkExamples {
@@ -152,7 +154,8 @@ body {
 }
 
 .work-examples {
-  margin-top: -90px;
+  text-align: center;
+  margin-right: 10%;
 }
 
 .work-examples p {
@@ -161,11 +164,6 @@ body {
 }
 
 .moveWorkHeader {
-  display: inline-block;
-  height: 20px;
-  position: relative;
-  right: 43%;
-  top: 80px;
   transform: rotate(-90deg);
   transition: all 1s;
 }
@@ -270,6 +268,7 @@ input:focus, textarea:focus {
   background-color: #efef67;
   border: #434343 .5px solid;
   color: #434855;
+  font-size: 14px;
   padding: 10px;
   width: 25%;
 }
@@ -277,22 +276,24 @@ input:focus, textarea:focus {
 
 /****************Responsive Styles**********/
 
-@media screen and (max-width: 900px){
-  .showWorkExamples {
+@media screen and (max-width: 680px){
+  /*.showWorkExamples {
     height: 100%;
+  }*/
+  .flex-item-4 img {
+    max-height: 50px;
   }
-  .flex-item-4 .close {
-    bottom: 600px;
-    left: 35%;
-  }
-  .languageLogos {
+  /*.languageLogos {
     display: none;
   }
   .languageLogosVertical{
     display: block;
-    margin: 0 auto;
     margin-bottom: 60px;
-  }
+  }*/
+  /*.moveWorkHeader {
+    transform: rotate(0deg);
+    transition: all 1s;
+  }*/
 }
 
 @media screen and (max-width: 500px) {
@@ -302,9 +303,6 @@ input:focus, textarea:focus {
   .showAboutText {
     height: 100%;
   }
-  .ruby-top-yellow {
-    margin-top: 42px;
-  }
   .showWorkExamples {
     border: none;
     height: 100%;
@@ -312,34 +310,29 @@ input:focus, textarea:focus {
   .hideRubyTop {
     height: 0%;
   }
+  .moveWorkHeader {
+    transform: rotate(0deg);
+    transition: all 1s;
+  }
+  .flex-item-4 {
+    flex-direction: column;
+  }
   input, textarea {
     margin: 11px 0 3px 60px;
     width: 55%;
   }
 }
 
-@media screen and (max-height: 700px) and (min-height: 500px) and (min-width: 501px){
-  .about-text p {
-    font-size: 1em;
-    margin: 15px 0;
-  }
-  .moveAboutHeader {
-    font-size: 4em;
-    margin-top: 15px;
-    transition: all 1s;
-  }
-  .ruby-top-yellow {
-    margin-top: 6%;
-  }
+/*@media screen and (max-height: 700px) and (min-height: 600px) and (min-width: 501px){
   .slideUp {
     height: 90%;
   }
   .get-in-touch {
     margin: 10px;
   }
-}
+}*/
 
-@media screen and (max-height: 499px) {
+@media screen and (max-height: 599px) {
   .flex-item-1, .flex-item-2, .flex-item-3, .flex-item-4 {
     height: 100%;
   }
@@ -360,19 +353,7 @@ input:focus, textarea:focus {
 }
 
 @media screen and (max-height: 350px){
-  .about-text p {
-    font-size: 1em;
-    margin: 15px 0;
-  }
-  .moveAboutHeader {
-    font-size: 4em;
-    margin-top: 30px;
-    transition: all 1s;
-  }
   .get-in-touch {
     margin: 1%;
-  }
-  .ruby-top-yellow {
-    margin-top: 10%;
   }
 }

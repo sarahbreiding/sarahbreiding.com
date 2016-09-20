@@ -8,7 +8,6 @@
     $(this).toggleClass('showAboutText');
     $('.flex-item-2').toggleClass('hideSocialMedia');
     $('.about-text').slideToggle('slow');
-    $('.about-header').toggleClass('moveAboutHeader');
   });
 
   $('.flex-item-4').click(function(){
