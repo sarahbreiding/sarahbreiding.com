@@ -31,7 +31,6 @@
     })
   })
 
-
   var $contactForm = $('#contact-form');
 
   var sendMessage = function () {
