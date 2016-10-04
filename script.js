@@ -15,12 +15,6 @@
     $('.flex-item-4 h1').toggleClass('moveWorkHeader');
     $('.flex-item-3').toggleClass('hideRubyTop');
     $('.work-examples').slideToggle('slow');
-    $('.img-wrap').click(function(e){
-      e.stopPropagation();
-    });
-    $('.light-box').click(function(e){
-      e.stopPropagation();
-    });
   })
 
   $('.flex-item-4 img').click(function(){
