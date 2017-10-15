@@ -27,21 +27,12 @@
 
   var $contactForm = $('#contact-form');
 
-  var sendMessage = function () {
-    return $.ajax({
-      type: 'POST',
-      dataType: 'JSON',
-      url: 'http://courier.crbapps.com',
-      data: $contactForm.serialize()
-    });
-  };
-
   $contactForm.submit(function (e) {
     e.preventDefault();
 
     $('#submit').after($('<div class="processing">Sending&hellip;</div>')).remove();
 
-    sendMessage().then(function () {
+    $.post($contactForm.attr('action'), $contactForm.serialize()).then(function () {
       $contactForm.slideUp(500, function() {
         $contactForm.after("<div class='response'>Your message has been sent - Thank you!</div").remove();
       });
