@@ -1,335 +1,170 @@
-/* http://meyerweb.com/eric/tools/css/reset/
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-  display: block;
-}
 body {
-  line-height: 1;
-}
-ol, ul {
-  list-style: none;
-}
-blockquote, q {
-  quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: '';
-  content: none;
-}
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-
-/* sarahbreiding.com CSS */
-body {
+  background: #f7f6f4 url('self.jpg') no-repeat bottom right fixed;
+/*  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;*/
+  background-size: contain;
+  color: #31413b;
   font-family: 'Josefin Sans', sans-serif;
+  font-size: 14px;
   font-weight: 200;
-}
-
-.wrapper, html, body {
-  height: 100%;
-  margin: 0;
+  line-height: 2.5em;
+  margin: 15% 4.5%;
 }
 
 .main-content {
-  height: 100%;
-}
-
-.flex-container {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  height: 100%;
-}
-
-.flex-item-1, .flex-item-2, .flex-item-3, .flex-item-4 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 50%;
   width: 50%;
 }
 
-.flex-item-1 {
-  flex-direction: column;
+h1 {
+  font-size: 3rem;
+  margin: 5% 0 0 0;
 }
 
-.flex-item-1, .flex-item-4 {
-  background-color: #dedede;
+.personal {
+  font-size: 2rem;
+  margin: 5% 0 0 0;
 }
 
-.about-header {
-  font-size: 4.5em;
-}
-
-.about-text {
+.highlight-color {
+  /*color: #40c751;*/
+  color: #49694c;
+  display: inline-block;
+  font-family:'Cookie',cursive;
   font-size: 1.5em;
-  text-align: center;
+  text-shadow: 1px 1px 1px #449634;
 }
 
-.about-text p {
-  margin: 20px 0;
+/*.shine:after {
+  animation: shine 2.5s infinite linear alternate;
+  content: "";
+  position: absolute;
+  left: 17%;
+  width: 2%;
+  height: 13%;
+  margin-top: -10px;
+  opacity: 0;
+  transform: rotate(30deg);
+  background: rgba(255, 255, 255, 0.13);
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0.3),
+    rgba(255, 255, 255, 0.5),
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.0)
+  );
+}
+
+.shine:active:after {
+  opacity: 0;
+}
+
+@keyframes shine{
+  to {
+    opacity: 1;
+    left: 3%;
+    transition-property: left, top, opacity;
+    transition-duration: 0.7s, 0.7s, 0.15s;
+    transition-timing-function: ease;
+  }
+}*/
+
+.contact-icons {
+  margin: 8% 0 0 0;
+}
+
+.contact-icons svg {
+  margin: 0 3% 0 0;
+}
+
+#mailIcon:hover, #linkedInIcon:hover{
+  fill: #40c751;
+}
+
+.close-form {
+  color: #608c70;
+  cursor: pointer;
+  display: inline-block;
+  float: right;
+  font-size: 2em;
+  position: absolute;
+  top: 5px;
+  right: 15px;
+  text-align: center;
+  vertical-align: top;
+}
+
+.close-form:hover {
+  color: #40c751;
+}
+
+input, textarea {
+  display: block;
+  padding: 1%;
+  width: 97%;
 }
 
 .hidden {
   display: none;
 }
 
-.showAboutText {
-  box-shadow: inset 0px -15px 0px 0px #efef67;
-  transition: all 1s;
-  width: 100%;
-}
-
-.flex-item-1:hover, .flex-item-4:hover, .flex-item-1:focus, .flex-item-4:focus, .flex-item-1:active, .flex-item-4:active {
-  background-color: #f6f6f6;
-  cursor: pointer;
-}
-
-.flex-item-2 {
-  background-color: #efef67;
-  overflow: hidden;
-}
-
-.social-media-section a:hover {
-  opacity: .75;
-}
-
-.hideSocialMedia {
-  transition: all 1s;
-  width: 0%;
-}
-
-.flex-item-3 {
-  background-color: #fff;
-  overflow: hidden;
-}
-
-.flex-item-4 h1 {
-  font-size: 4.5em;
-}
-
-.flex-item-4 img {
-  max-height: 80px;
-  margin: .1em;
-}
-
-.showWorkExamples {
-  box-shadow: inset 0px 15px 0px 0px #efef67;
-  width: 100%;
-  transition: all 1s;
-}
-
-.work-examples {
-  text-align: center;
-  margin-right: 10%;
-}
-
-.work-examples p {
-  font-size: 1.5em;
-  margin-bottom: 30px;
-}
-
-.moveWorkHeader {
-  transform: rotate(-90deg);
-  transition: all 1s;
-}
-
-.hideRubyTop {
-  width: 0;
-  transition: all 1s;
-}
-
-.contact-handle {
-  background-color: #555B68;
-  -moz-border-radius: 10px 10px 0 0;
-  -webkit-border-radius: 10px 10px 0 0;
-  border-radius: 10px 10px 0 0;
-  color: #fff;
-  cursor: pointer;
-  font-size: 1.5em;
-  margin-left: -62.5px;
-  margin-top: -31px;
-  padding: 10px 25px;
-  text-align: center;
-  width: 73px;
-  position: relative;
-  left: 50%;
-}
-
 .contact-form-section {
-  background-color: #555B68;
-  color: #fff;
-  height: 1em;
-  width: 100%;
+  background: #dee0d1;
+  box-shadow: 0px 20px 32px 30px #54545466;
+  padding: 3%;
   position: fixed;
-  bottom: 0;
-  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60%;
 }
 
-.hidden-contact-section {
-  display: none;
-  font-family: 'Dawning of a New Day', cursive;
-  font-size: 3em;
+.field {
+  margin-bottom: 20px;
 }
 
-.slideUp {
-  height: 75%;
-  transition: all 1s;
-  -webkit-transition: all 1s;
-  -moz-transition: all 1s;
-  -o-transition: all 1s;
-}
-
-.slideDown {
-  height: 1em;
-  -webkit-transition: all 1s;
-  -moz-transition: all 1s;
-  -o-transition: all 1s;
-  transition: all 1s;
-}
-
-input, textarea {
-  background-color: #7F889D;
-  border: #434343 .5px solid;
-  color: #fff;
-  display: block;
-  font-family: 'Josefin Sans', sans-serif;
-  font-size: 16px;
-  margin: 0 auto;
-  margin-top: 25px;
-  margin-bottom: 10px;
-  outline: none;
-  padding: 10px;
-  width: 45%;
-}
-
-textarea {
-  height: 80px;
-}
-
-::-webkit-input-placeholder { /* Chrome */
-  color: #fff;
-}
-:-ms-input-placeholder { /* IE 10+ */
-  color: #fff;
-}
-::-moz-placeholder { /* Firefox 19+ */
-  color: #fff;
-  opacity: 1;
-}
-:-moz-placeholder { /* Firefox 4 - 18 */
-  color: #fff;
-  opacity: 1;
-}
-
-input:focus, textarea:focus {
-  color: #fff;
-}
-
-.get-in-touch {
-  margin: 30px;
+.field label {
+  font-size: 1.3em;
 }
 
 .submit-button {
-  background-color: #efef67;
-  border: #434343 .5px solid;
-  color: #434855;
-  font-size: 14px;
-  padding: 10px;
-  width: 25%;
+  background: #608c70;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 1px 1px 1px 1px #ababab;
+  color: #fff;
+  cursor: pointer;
+  display: block;
+  font-size: 1em;
+  margin: 0 auto;
+  margin-top: 20px;
+  padding: 1%;
+  width: 11em;
 }
 
-
-/****************Responsive Styles**********/
-
-@media screen and (max-width: 680px){
-  .flex-item-4 img {
-    max-height: 50px;
-  }
+.submit-button:hover {
+  background: #40c751;
 }
 
-@media screen and (max-width: 500px) {
-  .flex-item-1, .flex-item-2, .flex-item-3, .flex-item-4 {
-    flex-basis: 500px;
+.response {
+  font-size: 1.5em;
+}
+
+@media only screen and (max-width: 1080px) {
+  body {
+    background: #f3f3f3;
   }
-  .showAboutText {
-    height: 100%;
+
+  .main-content:before {
+    background: #f3f3f3 url('self.jpg') top center no-repeat;
+    background-size: contain;
+    content: "";
+    display: block;
+    height: 500px;
   }
-  .showWorkExamples {
-    border: none;
-    height: 100%;
-  }
-  .hideRubyTop {
-    height: 0%;
-  }
-  .moveWorkHeader {
-    transform: rotate(0deg);
-    transition: all 1s;
-  }
-  .flex-item-4 {
-    flex-direction: column;
-  }
-  input, textarea {
-    margin: 11px 0 3px 60px;
-    width: 55%;
+
+  .main-content {
+    width: 100%;
   }
 }
 
-@media screen and (max-height: 510px) {
-  .flex-item-1, .flex-item-2, .flex-item-3, .flex-item-4 {
-    height: 100%;
-  }
-  .slideUp {
-    height: 90%;
-  }
-  .get-in-touch {
-    margin: 3%;
-  }
-}
-
-@media screen and (max-height: 405px){
-  .hidden-contact-section {
-    font-size: 2.5em;
-  }
-  .get-in-touch {
-    margin: .5%;
-  }
-  input, textarea {
-    margin-top: 1%;
-    margin-bottom: 0;
-    font-size: 14px;
-  }
-  textarea {
-    height: 60px;
-  }
-}
