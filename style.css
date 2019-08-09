@@ -1,14 +1,11 @@
 body {
   background: #f7f6f4 url('self.jpg') no-repeat bottom right fixed;
-/*  -webkit-background-size: contain;
-  -moz-background-size: contain;
-  -o-background-size: contain;*/
   background-size: contain;
   color: #31413b;
   font-family: 'Josefin Sans', sans-serif;
   font-size: 14px;
   font-weight: 200;
-  line-height: 2.5em;
+  line-height: 3em;
   margin: 15% 4.5%;
 }
 
@@ -27,47 +24,12 @@ h1 {
 }
 
 .highlight-color {
-  /*color: #40c751;*/
   color: #49694c;
   display: inline-block;
   font-family:'Cookie',cursive;
-  font-size: 1.5em;
+  font-size: 1.75em;
   text-shadow: 1px 1px 1px #449634;
 }
-
-/*.shine:after {
-  animation: shine 2.5s infinite linear alternate;
-  content: "";
-  position: absolute;
-  left: 17%;
-  width: 2%;
-  height: 13%;
-  margin-top: -10px;
-  opacity: 0;
-  transform: rotate(30deg);
-  background: rgba(255, 255, 255, 0.13);
-  background: linear-gradient(
-    to right,
-    rgba(255, 255, 255, 0.3),
-    rgba(255, 255, 255, 0.5),
-    rgba(255, 255, 255, 0.7),
-    rgba(255, 255, 255, 0.0)
-  );
-}
-
-.shine:active:after {
-  opacity: 0;
-}
-
-@keyframes shine{
-  to {
-    opacity: 1;
-    left: 3%;
-    transition-property: left, top, opacity;
-    transition-duration: 0.7s, 0.7s, 0.15s;
-    transition-timing-function: ease;
-  }
-}*/
 
 .contact-icons {
   margin: 8% 0 0 0;
@@ -152,11 +114,11 @@ input, textarea {
 
 @media only screen and (max-width: 1080px) {
   body {
-    background: #f3f3f3;
+    background: #f7f6f4;
   }
 
   .main-content:before {
-    background: #f3f3f3 url('self.jpg') top center no-repeat;
+    background: #f7f6f4  url('self.jpg') top center no-repeat;
     background-size: contain;
     content: "";
     display: block;
